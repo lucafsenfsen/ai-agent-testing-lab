@@ -28,10 +28,14 @@ test('fatal setup errors with zero tests are valid failed-run evidence',()=>{
 const {publicReport}=require('../automation/export-public.cjs');
 function completeReport() {
  const r=fixture(); r.command=['node','automation/run.cjs','evaluation'];
+ r.protocol='phase1-todo-v1.1'; r.exitCode=0; r.environment.workers=1; r.environment.retries=0;
+ r.sourceHashes=require('../automation/original-app.sha256.json');r.sourceHashesAfter={...r.sourceHashes};
+ r.suiteHashes={'test-fixture-only.js':'a'.repeat(64)};
  r.baseURL='http://127.0.0.1:12345/';
  r.tests=['chromium','webkit'].flatMap(project=>Array.from({length:25},(_,i)=>({...structuredClone(r.tests[0]),id:`${project}-${i}`,project})));
  r.summary={total:50,passed:50,failed:0,error:0,skipped:0};
  r.tests[0].attempts[0].attachments=[{name:'screenshot',contentType:'image/png',path:'/private/test-only.png'},{name:'browser-environment',contentType:'application/json',body:'{"version":"QA-only"}'}];
+ for(const t of r.tests)t.attempts[0].retry=0;
  return r;
 }
 test('public export preserves individual outcomes and omits local artifact locations',()=>{
@@ -48,4 +52,23 @@ test('public export refuses partial or unsuccessful runs',()=>{
 test('public export blocks accidental personal paths in retained metadata',()=>{
  const r=completeReport();r.tests[0].title='/Users/QA_ONLY/private';
  assert.throws(()=>publicReport(JSON.stringify(r)),/private path/);
+});
+test('report validation rejects contradictory attempts, invalid statuses and nonzero successful exits',()=>{
+ for(const mutate of [r=>r.tests[0].attempts[0].status='failed',r=>r.tests[0].attempts[0].status='invented',
+  r=>r.tests[0].attempts[0].errors=[{message:'actual error'}],r=>r.exitCode=1,
+  r=>r.finishedAt='2026-10-07T00:00:00Z',r=>r.sourceHashes=[]]) {
+  const r=fixture();mutate(r);assert.throws(()=>validate(r));
+ }
+ const r=fixture();r.tests[0].status='failed';r.status='failed';r.summary.passed=0;r.summary.failed=1;
+ assert.throws(()=>validate(r));
+ r.tests[0].attempts[0].status='failed';r.tests[0].attempts[0].errors=[{message:'expect(value).toBe(expected)'}];
+ assert.equal(validate(r).summary.failed,1);
+});
+test('public export requires known protocol, real baseline hashes and one successful unretried attempt',()=>{
+ for(const mutate of [r=>r.protocol='unknown',r=>r.exitCode=undefined,r=>r.command=undefined,
+  r=>r.sourceHashesAfter={},r=>r.sourceHashes={},r=>r.suiteHashes={},r=>r.environment.retries=1,
+  r=>r.tests[0].attempts[0].status='failed',r=>r.tests[0].attempts[0].retry=1,
+  r=>r.tests[0].attempts.unshift({...r.tests[0].attempts[0],status:'failed',errors:[{message:'first attempt failed'}]})]) {
+  const r=completeReport();mutate(r);assert.throws(()=>publicReport(JSON.stringify(r)));
+ }
 });

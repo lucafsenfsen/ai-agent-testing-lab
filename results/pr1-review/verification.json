@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "reviewedPR": 1,
+  "reviewedCommit": "34e20b5797522cb8247a048061963039a50d33ba",
+  "baseCommit": "713c528179c364f44c5c9bc717b0d70a80fdd685",
+  "protocol": "phase1-todo-v1.1",
+  "verifiedAt": "2026-10-08T19:22:36.245Z",
+  "verdict": "PASS",
+  "commands": [
+    "npm ci",
+    "npm run browsers:install",
+    "npm test",
+    "npm audit --json"
+  ],
+  "note": "Fresh dependency installation and baseline replay preceded fixes; the full suite was rerun after fixes. Historical public reports and original application remain unchanged. This is local assistant replication, not external certification.",
+  "application": {
+    "runId": "2026-10-08T19-18-43-841Z-evaluation-aacaa167",
+    "summary": {
+      "total": 50,
+      "passed": 50,
+      "failed": 0,
+      "error": 0,
+      "skipped": 0
+    },
+    "exitCode": 0,
+    "rawReportSha256": "3d9761e4a83e385f4121a2d1c826cfcb88d8b0a0f21a14f3f2897692b7d69860"
+  },
+  "dashboard": {
+    "runId": "2026-10-08T19-19-06-024Z-dashboard-6326369c",
+    "summary": {
+      "total": 24,
+      "passed": 24,
+      "failed": 0,
+      "error": 0,
+      "skipped": 0
+    },
+    "exitCode": 0,
+    "rawReportSha256": "cf5d7290882e010eea357daf0136d35969dcf50ec9d3f12387d161732046954d"
+  },
+  "nodeLogic": {
+    "total": 27,
+    "passed": 27,
+    "failed": 0,
+    "skipped": 0,
+    "logSha256": "332bff8d9b1134374be70ee0e4d08e51aa273a75e915843412b8e366efff987f"
+  },
+  "dependencyAudit": {
+    "vulnerabilities": {
+      "info": 0,
+      "low": 0,
+      "moderate": 0,
+      "high": 0,
+      "critical": 0,
+      "total": 0
+    },
+    "totalPackages": 3
+  },
+  "originalExperimentUnchanged": true,
+  "historicalRawEvidenceMatched": true,
+  "limits": [
+    "One app generation; no new model run.",
+    "Chromium and WebKit on the recorded Mac; other platforms and actual Safari are not independently verified.",
+    "Manual 9/9 and subjective 96.8/100 are preserved historical assessments.",
+    "No merge, deployment or production Pages build was performed."
+  ]
+}

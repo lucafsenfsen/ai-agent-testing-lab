@@ -107,6 +107,9 @@ test('D07 report validation, text safety, errors and offline import',async ({pag
   await expect(page.locator('#automated-output')).toContainText(data.tests[0].title);
   data.summary.passed++; await upload(page,'#automated-file',JSON.stringify(data));
   await expect(page.locator('#automated-message')).toContainText('Invalid or unsupported');
+  data.summary.passed--; data.tests[0].attempts[0].status='failed';
+  await upload(page,'#automated-file',JSON.stringify(data));
+  await expect(page.locator('#automated-message')).toContainText('Invalid or unsupported');
   expect(await page.evaluate(()=>window.injected)).toBeUndefined();
   const file=require('node:url').pathToFileURL(path.join(__dirname,'../../index.html')).href;
   await page.goto(file+'#automated'); await upload(page,'#automated-file',fs.readFileSync(reportPath(),'utf8'));
@@ -139,4 +142,27 @@ test('D09 all six sections fit mobile, tablet and desktop; dialog keyboard dismi
 test('D10 direct-file dashboard recording and reload persistence',async ({page})=>{
   await page.goto(require('node:url').pathToFileURL(path.join(__dirname,'../../index.html')).href);
   await record(page); await page.reload(); await expect(page.locator('#result-count')).toHaveText('1');
+});
+test('D11 unknown and inherited-property URL fragments fall back to overview',async ({page})=>{
+  for(const hash of ['unknown','constructor','__proto__','toString']) {
+    await page.goto('/#'+hash);
+    await expect(page.locator('#view-overview')).toBeVisible();
+    await expect(page.locator('#page-title')).toHaveText('Experiment overview');
+  }
+});
+test('D12 GitHub Pages project subpath loads assets, evidence and existing records',async ({page})=>{
+  // Emulate a project-site prefix while serving the actual checked-out static files.
+  await page.route('**/ai-agent-testing-lab/**',async route=>{
+    const url=new URL(route.request().url());
+    url.pathname=url.pathname.replace(/^\/ai-agent-testing-lab\//,'/');
+    const response=await route.fetch({url:url.href});
+    await route.fulfill({response});
+  });
+  await page.goto('/ai-agent-testing-lab/#automated');
+  await expect(page.locator('#view-automated')).toBeVisible();
+  await page.locator('#load-published').click();
+  await expect(page.locator('#automated-summary')).toHaveText('50 passed · 0 failed · 0 errors · 0 skipped / 50 tests');
+  await record(page);await page.reload();await expect(page.locator('#result-count')).toHaveText('1');
+  await page.locator('[data-view="results"]').click();
+  await expect(page.locator('#result-table')).toContainText('SOFTWARE QA ONLY');
 });

@@ -123,7 +123,7 @@
   }
   function navigate() {
     const view = location.hash.slice(1).split('/')[0];
-    const name = views[view] ? view : 'overview';
+    const name = Object.hasOwn(views, view) ? view : 'overview';
     for (const [id, meta] of Object.entries(views)) {
       $(`#view-${id}`).hidden = id !== name;
       const link = $(`[data-view="${id}"]`); link.classList.toggle('active', id === name);

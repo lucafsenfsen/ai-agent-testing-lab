@@ -30,7 +30,7 @@ npm run browsers:install
 npm test
 ```
 
-These checkout instructions apply once Phase 1 is merged. Before publication, run the same npm commands inside the prepared release folder.
+These checkout instructions apply once Phase 1 is merged. While reviewing PR #1, clone with `git clone --branch release/phase1 https://github.com/lucafsenfsen/ai-agent-testing-lab.git` instead, then run the same npm commands.
 
 `npm test` runs the Node logic checks, the app evaluation, and dashboard QA. Each browser case gets a new disposable context. A loopback-only server uses a free port and closes after the run. No API keys, model subscription, personal browser profile, administrator permissions, or security-setting changes are required. If an operating system lacks Playwright prerequisites, use a supported environment; the project does not install system packages.
 
@@ -43,6 +43,8 @@ npm run test:todo -- --grep=T07            # Focused filter regression checks
 ```
 
 Run `test:todo` first if running dashboard QA separately: two integration cases per engine require a real locally generated report and otherwise explicitly skip. See [the reproduction guide](docs/REPRODUCING.md) for exact coverage, status definitions, artifacts, replay and troubleshooting.
+
+The PR #1 review revision uses protocol `phase1-todo-v1.1`: the same 50 application checks, 24 dashboard checks and 27 Node logic/security checks. The original 50/50 app and 20/20 dashboard evidence remains unchanged under `results/experiment-001/`. See [the review and separate rerun evidence](docs/PR1-REVIEW.md) for the fixes and verification. These extra software checks do not increase the application's benchmark count.
 
 ## Open the dashboard
 

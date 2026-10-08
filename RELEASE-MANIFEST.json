@@ -14,23 +14,23 @@
     },
     {
       "path": "README.md",
-      "bytes": 9708,
-      "sha256": "33b207859e6baa13ccd741489b2fc87fe3afaf1010eede009a45f25a249733db"
+      "bytes": 10221,
+      "sha256": "7cbe3d0c7b63c876715bde4eaa39fbfe1e95fec46a91d503dca68b55e75f35ea"
     },
     {
       "path": "PUBLICATION.md",
-      "bytes": 6042,
-      "sha256": "c47fb7875449084e6362e2ca698b4e7d56c7868e316e79fa9732c05eb6ae2645"
+      "bytes": 6140,
+      "sha256": "a45a349c71a807de446d8ad5ea30dadf537538de01f6375603e92a2de32c75d5"
     },
     {
       "path": "release-files.txt",
-      "bytes": 861,
-      "sha256": "afd3cd01587efb7526d897211f88b3504e5b2df2ab2699ba0a3b4875cc6b2269"
+      "bytes": 1011,
+      "sha256": "4f542863ae2267ede9d6b15051c1fc2125b5775cb007c758496b06e95735997c"
     },
     {
       "path": "package.json",
-      "bytes": 618,
-      "sha256": "20a692777606184d81edcdf54cc7d0dd94aba269ddf9b9ac36bb090888cbf2f0"
+      "bytes": 640,
+      "sha256": "f591c2a31d360c81f0829e85581c8cf88ba7fb274d2aad63f4f31bde307a9028"
     },
     {
       "path": "package-lock.json",
@@ -59,13 +59,13 @@
     },
     {
       "path": "app.js",
-      "bytes": 28504,
-      "sha256": "d83c90ac5cab4f2a3bd593ed0b8748a580100e18bb3145d445665ad8cc95298a"
+      "bytes": 28519,
+      "sha256": "b06693f13bd019864c8c9046de5b0c34c2f0c0bcac5969354c4dbbcefd0c339f"
     },
     {
       "path": "report-format.js",
-      "bytes": 2535,
-      "sha256": "146430b81e6a7874b32cb554119830040faea572078f7d84e467789fe7109b09"
+      "bytes": 3196,
+      "sha256": "395822b2f44193b96ab5e74eeb1f918222d64ee516cc25eda10ad52c28400f20"
     },
     {
       "path": "automated-reports.js",
@@ -79,13 +79,13 @@
     },
     {
       "path": "automation/server.cjs",
-      "bytes": 1488,
-      "sha256": "f92e4a94184904c59e4a64ff371b8865a25a93cb966eb9dc5b374ccbb1ec42c2"
+      "bytes": 2589,
+      "sha256": "48e9a87343a362ed6dd4ba18949acda7c39447ae962dd879a70af9d505c315e8"
     },
     {
       "path": "automation/run.cjs",
-      "bytes": 5466,
-      "sha256": "5354710a336bd45cc1d11c3a713fbc2830879c16027d8b9f2476ae76792ed3b7"
+      "bytes": 5536,
+      "sha256": "1c845305642ff1fdb5fd903a514672de32d50ed71d5cbcf61949a9d52196c6c2"
     },
     {
       "path": "automation/report.cjs",
@@ -99,8 +99,8 @@
     },
     {
       "path": "automation/export-public.cjs",
-      "bytes": 3764,
-      "sha256": "555a5dd892b4d1d1962b7c80eb4bbb568453425dfcf7c3764e22f1c48c8b503f"
+      "bytes": 5078,
+      "sha256": "d6a17321a95c632950b5a98f6a4f4a0152fe6a88d1eb0d0bb889982d6bfe8ef3"
     },
     {
       "path": "automation/original-app.sha256.json",
@@ -119,8 +119,13 @@
     },
     {
       "path": "tests/report.test.cjs",
-      "bytes": 3884,
-      "sha256": "18dc058b1b44a69f62caf40a42a45f187f704583a0ca878236f0aa3c556e94a0"
+      "bytes": 5517,
+      "sha256": "90bd4722ab6e08fc52300e137afb4e8efb9db86a4fde71b9f6f990422543d18d"
+    },
+    {
+      "path": "tests/server.test.cjs",
+      "bytes": 3399,
+      "sha256": "6bde697346ecbe0df5862b87894fcc402eddbf9c93fc03a4263ef7fed0cd0295"
     },
     {
       "path": "tests/e2e/fixtures.cjs",
@@ -134,13 +139,18 @@
     },
     {
       "path": "tests/e2e/dashboard.spec.cjs",
-      "bytes": 10893,
-      "sha256": "734ab5465aa5c75b8a9093f96c0ac0057405e7e144719cb0c79028577b400806"
+      "bytes": 12466,
+      "sha256": "134434c337a205d2beb8244eb87f3b367344afe490cff2d8b89fc997f06309ee"
     },
     {
       "path": "docs/REPRODUCING.md",
-      "bytes": 8043,
-      "sha256": "9349ca940a556cc10899b7adecfc2d4a2c122ccee29dac7e6c8e6dab31fd5922"
+      "bytes": 9334,
+      "sha256": "d9d133e5ee9e35cdd419665f146c279b419cc68060757f041b10b85d448fb789"
+    },
+    {
+      "path": "docs/PR1-REVIEW.md",
+      "bytes": 8796,
+      "sha256": "96091d8bce627d49de8fde6d434275982fc20568ee953903275c915dc8aba771"
     },
     {
       "path": "Experiments/001-todo-gpt6/README.md",
@@ -186,6 +196,21 @@
       "path": "results/experiment-001/provenance.json",
       "bytes": 2043,
       "sha256": "09170760776e10fbca1c2376e07ebc1984d511acc4c0bd9f78f5b0eafac5830a"
+    },
+    {
+      "path": "results/pr1-review/evaluation.json",
+      "bytes": 51493,
+      "sha256": "6db7d867d5653b711159508b3177c3ca81c423daf31185afec21782b74324417"
+    },
+    {
+      "path": "results/pr1-review/dashboard-qa.json",
+      "bytes": 27688,
+      "sha256": "4ebdb9e28b7c0a6479fdf5a77cc45f1df07b4c2a338cfc6ac6c12e020dcd0daa"
+    },
+    {
+      "path": "results/pr1-review/verification.json",
+      "bytes": 2020,
+      "sha256": "79eeac2022a103a175a3ff6c7202d087402def2933be1b69e74d733ae3c78423"
     }
   ],
   "note": "All payload files are listed; this generated manifest does not hash itself. No dependencies or raw local reports are bundled."

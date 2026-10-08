@@ -13,7 +13,9 @@ npm start
 
 These commands use project dependencies and user-level browser downloads. They do not upload results or install operating-system packages. No `sudo`, `--with-deps`, browser security changes or API credentials are needed. Playwright's [browser documentation](https://playwright.dev/docs/browsers) describes supported environments. On systems with missing native prerequisites, use an already supported environment; platform portability beyond the recorded macOS run is unverified.
 
-`npm test` runs 21 Node checks, 50 app checks and 20 dashboard checks. The app's 50/50 is separate from all infrastructure/software QA counts. Future changes to the test suite must version the protocol and update these counts.
+`npm test` currently runs 27 Node checks, 50 app checks and 24 dashboard checks under protocol `phase1-todo-v1.1`. The original `phase1-todo-v1` run had 21 Node checks and 20 dashboard checks. Application assertions remain the same 25 cases per engine. The app's 50/50 is separate from all infrastructure/software QA counts. Future changes to the test suite must version the protocol and update these counts.
+
+To rerun the historical public reports with their exact source hashes, use a separate clone and `git checkout 34e20b5797522cb8247a048061963039a50d33ba` before installing. The current review revision fixes report validation and local-server access; its fresh evidence is separate under `results/pr1-review/`. Do not overwrite the original reports or expect their infrastructure hashes to match revised source.
 
 For an isolated task, use `npm run test:todo`, `npm run test:dashboard` or `npm run test:unit`. Browser options supported by the wrapper are `--project=chromium`, `--project=webkit`, `--grep=pattern` and `--headed`, passed after `--`. Filtered runs are partial evidence. Direct `npx playwright test` is intentionally rejected because it bypasses run-folder and provenance setup.
 
@@ -38,6 +40,8 @@ The legacy `automation/lab.sh` convenience launcher can use an existing Codex No
 Each case runs once in Chromium and once in WebKit, in a fresh browser context. No normal browser profile or saved personal scores are used. Locale is en-US, timezone is Europe/Zurich, default viewport is 1440×1000, workers=1, retries=0. The server uses loopback and an available port, then closes. UI assertions wait for observable conditions rather than fixed sleeps. Fault injection affects only the test page's storage methods.
 
 The original app and research README are hashed before and after the run against `automation/original-app.sha256.json`. A mismatch makes the run unsuccessful. Do not regenerate that baseline merely to make a modified app pass; use a new target and protocol when evaluating changed source.
+
+The local server serves only release-allowlisted files and normalized report JSON. It rejects symlinks, unexpected Host/Origin headers, and write methods. Logs, traces, input snapshots, dependency folders, and arbitrary local files cannot be downloaded through it. Open private diagnostic artifacts directly on disk.
 
 ## Output
 
@@ -72,9 +76,11 @@ For traces, use `npx playwright show-trace reports/<run-id>/artifacts/<test>/tra
 
 The fixed published report is at `results/experiment-001/evaluation.json`; dashboard QA is in its own JSON. Read `publicExport` for the source report hash and omissions. `automation/export-public.cjs` only exports a full, passing two-engine Phase 1 run. It refuses filtered, skipped or unsuccessful runs so they cannot accidentally replace the specifically advertised 50/50 result. That restriction is a release safeguard, not a research policy to suppress failures: all attempts remain locally recorded, and future unsuccessful benchmark runs need their own reviewed public records.
 
+The exporter also requires a supported protocol, zero exit code, the original source hashes before and after, and exactly one successful attempt per case without retries. The viewer rejects contradictory attempt statuses. Neither structural validation nor matching self-reported hashes authenticates who ran a report; source inspection and independent reruns are still necessary.
+
 ```sh
-node automation/export-public.cjs evaluation reports/<run-id>/report.json results/experiment-001/evaluation.json
-node automation/export-public.cjs dashboard reports/<run-id>/report.json results/experiment-001/dashboard-qa.json
+node automation/export-public.cjs evaluation reports/<run-id>/report.json release/reviewed-rerun/evaluation.json
+node automation/export-public.cjs dashboard reports/<run-id>/report.json release/reviewed-rerun/dashboard-qa.json
 ```
 
 Review the candidate output before publishing. This exporter uses an allowlist of retained fields and checks for common private paths/credentials; pattern scanning cannot prove absence of every secret. Public research metadata (timestamps, OS/architecture, browser versions and configured timezone) is intentionally retained. No user account name, home directory, browser profile, email or credentials is necessary.

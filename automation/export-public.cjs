@@ -11,7 +11,20 @@ function publicReport(raw) {
       r.summary.skipped || !r.originalAppUnchanged) {
     throw new Error('This exporter accepts complete passing runs only. Review failures separately; never discard them to claim a pass.');
   }
-  const expected = r.scope === 'evaluation' ? 25 : 10;
+  const protocols = {'phase1-todo-v1':{evaluation:25,dashboard:10}, 'phase1-todo-v1.1':{evaluation:25,dashboard:12}};
+  const expected = protocols[r.protocol]?.[r.scope];
+  if (!expected || r.exitCode !== 0 || r.environment.workers !== 1 || r.environment.retries !== 0 ||
+      !Array.isArray(r.command) || r.command.length < 3 || r.command[0] !== 'node' || r.command[1] !== 'automation/run.cjs' ||
+      r.command[2] !== r.scope || r.command.slice(3).some(arg => arg !== '--headed')) {
+    throw new Error('Expected a known, complete Phase 1 protocol with a successful exit and no retries.');
+  }
+  const baseline = JSON.parse(fs.readFileSync(path.join(__dirname,'original-app.sha256.json'),'utf8'));
+  for (const recorded of [r.sourceHashes, r.sourceHashesAfter]) {
+    if (!recorded || Object.keys(recorded).length !== Object.keys(baseline).length ||
+        Object.entries(baseline).some(([file,hash]) => recorded[file] !== hash)) throw new Error('Original source hashes do not match the preserved baseline.');
+  }
+  if (!r.suiteHashes || !Object.keys(r.suiteHashes).length ||
+      !Object.values(r.suiteHashes).every(hash => typeof hash === 'string' && /^[a-f0-9]{64}$/.test(hash))) throw new Error('Missing or invalid suite hashes.');
   if (r.tests.length !== expected * 2 || ['chromium','webkit'].some(engine => r.tests.filter(t => t.project === engine).length !== expected) ||
       r.command?.some(arg => /^--(?:grep|project)/.test(arg))) throw new Error('Expected the full Phase 1 two-browser suite; partial runs cannot replace published evidence.');
   const allowedAttachments = new Set(['browser-environment', 'page-errors']);
@@ -23,7 +36,9 @@ function publicReport(raw) {
     originalAppUnchanged:r.originalAppUnchanged, durationMs:r.durationMs, exitCode:r.exitCode,
     summary:r.summary, errors:[], limitations:r.limitations,
     tests:r.tests.map(t => {
-      if (t.attempts.some(a => a.errors.length)) throw new Error('Unexpected attempt errors; manual review required.');
+      if (t.attempts.length !== 1 || t.attempts[0].status !== 'passed' || t.attempts[0].retry !== 0 || t.attempts[0].errors.length) {
+        throw new Error('Expected exactly one successful attempt per test, without retries or errors.');
+      }
       return {id:t.id, title:t.title, project:t.project, file:t.file, line:t.line,
         viewport:t.viewport, status:t.status, outcome:t.outcome,
         attempts:t.attempts.map(a => ({status:a.status, durationMs:a.durationMs, retry:a.retry, errors:[],

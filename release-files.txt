@@ -22,10 +22,12 @@ automation/original-app.sha256.json
 automation/prepare-release.py
 tests/core.test.cjs
 tests/report.test.cjs
+tests/server.test.cjs
 tests/e2e/fixtures.cjs
 tests/e2e/todo.spec.cjs
 tests/e2e/dashboard.spec.cjs
 docs/REPRODUCING.md
+docs/PR1-REVIEW.md
 Experiments/001-todo-gpt6/README.md
 Experiments/001-todo-gpt6/index.html
 Experiments/001-todo-gpt6/styles.css
@@ -35,3 +37,6 @@ results/experiment-001/README.md
 results/experiment-001/evaluation.json
 results/experiment-001/dashboard-qa.json
 results/experiment-001/provenance.json
+results/pr1-review/evaluation.json
+results/pr1-review/dashboard-qa.json
+results/pr1-review/verification.json

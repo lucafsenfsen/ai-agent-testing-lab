@@ -84,7 +84,7 @@ git commit -m "Prepare Phase 1 reproducible browser evaluation and public eviden
 git push -u origin release/phase1
 ```
 
-Then open a pull request on GitHub, review it, and merge when ready. Those commit/push steps have not been executed by the preparation tool or assistant. Your Git author attribution is controlled by your Git configuration; choose GitHub's private/noreply email if you do not want a personal email in commit history.
+Then open a pull request on GitHub, review it, and merge only when authorized. The preparation tool never executes commit/push steps. PR #1 now contains the release branch and its review fixes; use its existing branch rather than creating a duplicate. Your Git author attribution is controlled by your Git configuration; choose GitHub's private/noreply email if you do not want a personal email in commit history.
 
 Keep the existing GitHub Pages configuration. Merging into its configured publishing branch may update the live site. The site is static; Playwright runs locally. The new published-evidence button reads the reviewed results JSON. Local `reports/` are intentionally absent from GitHub Pages, so latest-local buttons need a local run.
 

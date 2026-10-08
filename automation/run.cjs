@@ -24,9 +24,9 @@ async function run(scope, baseURL, args) {
   const suiteFiles = ['package.json','package-lock.json','playwright.config.cjs','automation/run.cjs',
     'automation/server.cjs','automation/export-public.cjs','automation/report.cjs','automation/reporter.cjs','automation/original-app.sha256.json',
     'tests/e2e/fixtures.cjs', 'tests/e2e/todo.spec.cjs', 'tests/e2e/dashboard.spec.cjs', 'automation/lab.sh',
-    'tests/core.test.cjs','tests/report.test.cjs','automated-reports.js','report-format.js',
+    'tests/core.test.cjs','tests/report.test.cjs','tests/server.test.cjs','release-files.txt','automated-reports.js','report-format.js',
     'index.html','styles.css','app.js','core.js'];
-  const report = {schemaVersion:1, kind:'ai-agent-lab-automated', protocol:'phase1-todo-v1', scope, runId,
+  const report = {schemaVersion:1, kind:'ai-agent-lab-automated', protocol:'phase1-todo-v1.1', scope, runId,
     startedAt:new Date().toISOString(), status:'error',
     target:scope === 'evaluation' ? 'Experiments/001-todo-gpt6/index.html' : 'index.html',
     environment:{node:process.version, platform:os.platform(), arch:os.arch(), osRelease:os.release(),
@@ -69,7 +69,7 @@ async function run(scope, baseURL, args) {
   if (scope === 'all') {
     fs.mkdirSync(path.join(root,'reports'),{recursive:true});
     const log = fs.createWriteStream(path.join(root,'reports',`unit-${Date.now()}.log`));
-    code = await execute(['--test','tests/core.test.cjs','tests/report.test.cjs'], process.env, log);
+    code = await execute(['--test','tests/core.test.cjs','tests/report.test.cjs','tests/server.test.cjs'], process.env, log);
     log.end();
   }
   const server = await start(0);
