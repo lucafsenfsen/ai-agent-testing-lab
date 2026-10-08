@@ -1,0 +1,753 @@
+{
+  "schemaVersion": 1,
+  "kind": "ai-agent-lab-automated",
+  "protocol": "phase1-todo-v1",
+  "scope": "dashboard",
+  "runId": "2026-10-08T18-17-58-871Z-dashboard-b583e9bd",
+  "startedAt": "2026-10-08T18:17:58.872Z",
+  "finishedAt": "2026-10-08T18:18:08.790Z",
+  "status": "passed",
+  "target": "index.html",
+  "environment": {
+    "node": "v24.19.0",
+    "platform": "darwin",
+    "arch": "arm64",
+    "osRelease": "27.0.0",
+    "playwright": "1.64.0",
+    "locale": "en-US",
+    "timezone": "Europe/Zurich",
+    "workers": 1,
+    "retries": 0
+  },
+  "command": [
+    "node",
+    "automation/run.cjs",
+    "dashboard"
+  ],
+  "sourceHashes": {
+    "Experiments/001-todo-gpt6/app.js": "5dee073c8b2de9f9b24eb6307fcbab447d8e22b7611f71e04a7d2c3bae457f3e",
+    "Experiments/001-todo-gpt6/index.html": "f894efe0bd51b2ce97a953cbbd056e4945294f758e24d4c5e515133d66b85994",
+    "Experiments/001-todo-gpt6/preview.png": "b217d5cf618ba70a7d13cdbbee73b2b08df721d9c452ba2df9dde69eed27e7f3",
+    "Experiments/001-todo-gpt6/styles.css": "2df3fff277b69f40d2209bed3ff11b408e1f850fc7d28a3f38ae05686b223761",
+    "Experiments/001-todo-gpt6/README.md": "fe393e3bc66468c2cbf3dce6d2698df20856856189d54c7870510d4fa01e29b1"
+  },
+  "sourceHashesAfter": {
+    "Experiments/001-todo-gpt6/app.js": "5dee073c8b2de9f9b24eb6307fcbab447d8e22b7611f71e04a7d2c3bae457f3e",
+    "Experiments/001-todo-gpt6/index.html": "f894efe0bd51b2ce97a953cbbd056e4945294f758e24d4c5e515133d66b85994",
+    "Experiments/001-todo-gpt6/preview.png": "b217d5cf618ba70a7d13cdbbee73b2b08df721d9c452ba2df9dde69eed27e7f3",
+    "Experiments/001-todo-gpt6/styles.css": "2df3fff277b69f40d2209bed3ff11b408e1f850fc7d28a3f38ae05686b223761",
+    "Experiments/001-todo-gpt6/README.md": "fe393e3bc66468c2cbf3dce6d2698df20856856189d54c7870510d4fa01e29b1"
+  },
+  "suiteHashes": {
+    "package.json": "20a692777606184d81edcdf54cc7d0dd94aba269ddf9b9ac36bb090888cbf2f0",
+    "package-lock.json": "32eb28457bd6c65baf7c8d3c7b433806c788c08f6adbf5cf0346917b3791b439",
+    "playwright.config.cjs": "3715bfb6a278dbd726eda067396e1b883ff235a8d9a6b72ffa47658856c51e15",
+    "automation/run.cjs": "5354710a336bd45cc1d11c3a713fbc2830879c16027d8b9f2476ae76792ed3b7",
+    "automation/server.cjs": "f92e4a94184904c59e4a64ff371b8865a25a93cb966eb9dc5b374ccbb1ec42c2",
+    "automation/export-public.cjs": "555a5dd892b4d1d1962b7c80eb4bbb568453425dfcf7c3764e22f1c48c8b503f",
+    "automation/report.cjs": "27431da990fc7b8bd167a487c7f7fef8999025bde38ac91061bdc07eb7d51fdc",
+    "automation/reporter.cjs": "b744cae5fe888d49c68cc4fe7f856f61cbdf2c7d478641bae56052deb4d126e0",
+    "automation/original-app.sha256.json": "790224fe17b64402af74767aa34834e357d3d935c599a7ceaa3b1b85c5857136",
+    "tests/e2e/fixtures.cjs": "61eb89c63784fdda335f056321af1571184db03c8879be83cc350176c1225c4b",
+    "tests/e2e/todo.spec.cjs": "f40af4a228174c5c486ce80aec52a1cbfcc3a341e9099bdb1b762f71b5836f1d",
+    "tests/e2e/dashboard.spec.cjs": "734ab5465aa5c75b8a9093f96c0ac0057405e7e144719cb0c79028577b400806",
+    "automation/lab.sh": "d9306c76aadbefd9de61a4d4ebd6448e65ddaf0b0a863a3ab80904086ba6be40",
+    "tests/core.test.cjs": "9660229b440242b61860f5a2a30550b00a0ce01b78f5c3c743dfcc1ebd0c1551",
+    "tests/report.test.cjs": "18dc058b1b44a69f62caf40a42a45f187f704583a0ca878236f0aa3c556e94a0",
+    "automated-reports.js": "172c05b56838bd352f6edfa7d803593a2db3a934d84a5672451da06a4355e435",
+    "report-format.js": "146430b81e6a7874b32cb554119830040faea572078f7d84e467789fe7109b09",
+    "index.html": "66622b4cf00103c916c09540495e7c96488e47a11fafa60864de9abd45ab8987",
+    "styles.css": "50ed5729e6603ca0c100fb066f2e84c47a288428046b44e539f7f0b65fcec7d6",
+    "app.js": "d83c90ac5cab4f2a3bd593ed0b8748a580100e18bb3145d445665ad8cc95298a",
+    "core.js": "a8aaf4f47f2652ad53735afcf5a3fd81f0973643993f6bf9c0e4ad522894a274"
+  },
+  "originalAppUnchanged": true,
+  "durationMs": 9748.093,
+  "exitCode": 0,
+  "summary": {
+    "total": 20,
+    "passed": 20,
+    "failed": 0,
+    "error": 0,
+    "skipped": 0
+  },
+  "errors": [],
+  "limitations": [
+    "Post-hoc tests of one preserved app; not a new model generation or an official benchmark.",
+    "Browser engines and viewport checks do not establish full accessibility or actual Safari/device compatibility."
+  ],
+  "tests": [
+    {
+      "id": "98c9c7983ccfaa711b4b-6b4631919a833730221d",
+      "title": "D01 five challenges and isolated empty score workspace",
+      "project": "chromium",
+      "file": "dashboard.spec.cjs",
+      "line": 23,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 164,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"chromium\",\"version\":\"156.0.8078.4\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "98c9c7983ccfaa711b4b-e91c1f1c71485a9db872",
+      "title": "D02 record, persist, edit, cancel deletion, delete",
+      "project": "chromium",
+      "file": "dashboard.spec.cjs",
+      "line": 28,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 611,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"chromium\",\"version\":\"156.0.8078.4\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "98c9c7983ccfaa711b4b-1a96f581abe64c734819",
+      "title": "D03 JSON and CSV downloads, duplicate/conflict rejection and restore",
+      "project": "chromium",
+      "file": "dashboard.spec.cjs",
+      "line": 43,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 399,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"chromium\",\"version\":\"156.0.8078.4\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "98c9c7983ccfaa711b4b-9bf1f0fe3d8bd7d2bf86",
+      "title": "D04 comparisons and search still use subjective records only",
+      "project": "chromium",
+      "file": "dashboard.spec.cjs",
+      "line": 57,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 443,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"chromium\",\"version\":\"156.0.8078.4\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "98c9c7983ccfaa711b4b-1b5050ffd287e1a3e3db",
+      "title": "D05 corrupt score storage is preserved; quota failure does not add records",
+      "project": "chromium",
+      "file": "dashboard.spec.cjs",
+      "line": 65,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 434,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"chromium\",\"version\":\"156.0.8078.4\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "98c9c7983ccfaa711b4b-2ba0b0ee00de870a2ac4",
+      "title": "D06 latest real evaluation loads, downloads and leaves scores unchanged",
+      "project": "chromium",
+      "file": "dashboard.spec.cjs",
+      "line": 77,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 480,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"chromium\",\"version\":\"156.0.8078.4\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "98c9c7983ccfaa711b4b-d5c6e4ae868bc13cbc9d",
+      "title": "D07 report validation, text safety, errors and offline import",
+      "project": "chromium",
+      "file": "dashboard.spec.cjs",
+      "line": 95,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 299,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"chromium\",\"version\":\"156.0.8078.4\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "98c9c7983ccfaa711b4b-ff13378dcd8de04e61a7",
+      "title": "D08 missing latest report explains how to load saved evidence",
+      "project": "chromium",
+      "file": "dashboard.spec.cjs",
+      "line": 115,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 246,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"chromium\",\"version\":\"156.0.8078.4\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "98c9c7983ccfaa711b4b-d59be040ebac98878716",
+      "title": "D09 all six sections fit mobile, tablet and desktop; dialog keyboard dismissal",
+      "project": "chromium",
+      "file": "dashboard.spec.cjs",
+      "line": 120,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 554,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"chromium\",\"version\":\"156.0.8078.4\",\"viewport\":{\"width\":390,\"height\":844}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "98c9c7983ccfaa711b4b-a88c40a28d0c23f4e4fd",
+      "title": "D10 direct-file dashboard recording and reload persistence",
+      "project": "chromium",
+      "file": "dashboard.spec.cjs",
+      "line": 139,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 327,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"chromium\",\"version\":\"156.0.8078.4\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "98c9c7983ccfaa711b4b-b445f83d56d27f716766",
+      "title": "D01 five challenges and isolated empty score workspace",
+      "project": "webkit",
+      "file": "dashboard.spec.cjs",
+      "line": 23,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 353,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"webkit\",\"version\":\"27.2\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "98c9c7983ccfaa711b4b-dabc7f39aae8d3a0ff69",
+      "title": "D02 record, persist, edit, cancel deletion, delete",
+      "project": "webkit",
+      "file": "dashboard.spec.cjs",
+      "line": 28,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 711,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"webkit\",\"version\":\"27.2\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "98c9c7983ccfaa711b4b-1072a8184dd5c33a3da6",
+      "title": "D03 JSON and CSV downloads, duplicate/conflict rejection and restore",
+      "project": "webkit",
+      "file": "dashboard.spec.cjs",
+      "line": 43,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 551,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"webkit\",\"version\":\"27.2\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "98c9c7983ccfaa711b4b-eaa6e997caf2531ccce3",
+      "title": "D04 comparisons and search still use subjective records only",
+      "project": "webkit",
+      "file": "dashboard.spec.cjs",
+      "line": 57,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 599,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"webkit\",\"version\":\"27.2\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "98c9c7983ccfaa711b4b-e94bda3d78f1d32c8f56",
+      "title": "D05 corrupt score storage is preserved; quota failure does not add records",
+      "project": "webkit",
+      "file": "dashboard.spec.cjs",
+      "line": 65,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 523,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"webkit\",\"version\":\"27.2\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "98c9c7983ccfaa711b4b-cf3c4c3e6d62f1136774",
+      "title": "D06 latest real evaluation loads, downloads and leaves scores unchanged",
+      "project": "webkit",
+      "file": "dashboard.spec.cjs",
+      "line": 77,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 514,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"webkit\",\"version\":\"27.2\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "98c9c7983ccfaa711b4b-97ff9335b902fabd3142",
+      "title": "D07 report validation, text safety, errors and offline import",
+      "project": "webkit",
+      "file": "dashboard.spec.cjs",
+      "line": 95,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 466,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"webkit\",\"version\":\"27.2\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "98c9c7983ccfaa711b4b-dfd084776328b53ceb18",
+      "title": "D08 missing latest report explains how to load saved evidence",
+      "project": "webkit",
+      "file": "dashboard.spec.cjs",
+      "line": 115,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 296,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"webkit\",\"version\":\"27.2\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "98c9c7983ccfaa711b4b-b1b46a2819b14692aec2",
+      "title": "D09 all six sections fit mobile, tablet and desktop; dialog keyboard dismissal",
+      "project": "webkit",
+      "file": "dashboard.spec.cjs",
+      "line": 120,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 559,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"webkit\",\"version\":\"27.2\",\"viewport\":{\"width\":390,\"height\":844}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "98c9c7983ccfaa711b4b-73f6f2a9fb80b1652413",
+      "title": "D10 direct-file dashboard recording and reload persistence",
+      "project": "webkit",
+      "file": "dashboard.spec.cjs",
+      "line": 139,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 551,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"webkit\",\"version\":\"27.2\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "publicExport": {
+    "sourceReportSha256": "039c0bb6b5fef86e4e5dd6c74059b0e334519b11af327ece8b9630c5d492fe26",
+    "omitted": [
+      "ephemeral local server URL",
+      "screenshots and their file references",
+      "raw Playwright JSON",
+      "console logs",
+      "traces",
+      "input snapshots"
+    ],
+    "note": "Derived from an actual completed run. Test titles, outcomes, timings, environment and source hashes are retained. No scores are inferred. Raw evidence stays local."
+  }
+}

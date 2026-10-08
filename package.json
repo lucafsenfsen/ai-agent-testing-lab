@@ -1,0 +1,16 @@
+{
+  "name": "ai-agent-testing-lab",
+  "version": "2.0.0",
+  "private": true,
+  "description": "Reproducible local browser evaluation of preserved AI-generated applications",
+  "engines": { "node": ">=22" },
+  "scripts": {
+    "start": "node automation/server.cjs",
+    "test": "node automation/run.cjs all",
+    "test:todo": "node automation/run.cjs evaluation",
+    "test:dashboard": "node automation/run.cjs dashboard",
+    "test:unit": "node --test tests/core.test.cjs tests/report.test.cjs tests/server.test.cjs",
+    "browsers:install": "playwright install chromium webkit"
+  },
+  "devDependencies": { "@playwright/test": "1.64.0" }
+}

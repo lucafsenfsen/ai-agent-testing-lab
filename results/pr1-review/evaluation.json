@@ -1,0 +1,1745 @@
+{
+  "schemaVersion": 1,
+  "kind": "ai-agent-lab-automated",
+  "protocol": "phase1-todo-v1.1",
+  "scope": "evaluation",
+  "runId": "2026-10-08T19-18-43-841Z-evaluation-aacaa167",
+  "startedAt": "2026-10-08T19:18:43.842Z",
+  "finishedAt": "2026-10-08T19:19:03.718Z",
+  "status": "passed",
+  "target": "Experiments/001-todo-gpt6/index.html",
+  "environment": {
+    "node": "v24.19.0",
+    "platform": "darwin",
+    "arch": "arm64",
+    "osRelease": "27.0.0",
+    "playwright": "1.64.0",
+    "locale": "en-US",
+    "timezone": "Europe/Zurich",
+    "workers": 1,
+    "retries": 0
+  },
+  "command": [
+    "node",
+    "automation/run.cjs",
+    "evaluation"
+  ],
+  "sourceHashes": {
+    "Experiments/001-todo-gpt6/app.js": "5dee073c8b2de9f9b24eb6307fcbab447d8e22b7611f71e04a7d2c3bae457f3e",
+    "Experiments/001-todo-gpt6/index.html": "f894efe0bd51b2ce97a953cbbd056e4945294f758e24d4c5e515133d66b85994",
+    "Experiments/001-todo-gpt6/preview.png": "b217d5cf618ba70a7d13cdbbee73b2b08df721d9c452ba2df9dde69eed27e7f3",
+    "Experiments/001-todo-gpt6/styles.css": "2df3fff277b69f40d2209bed3ff11b408e1f850fc7d28a3f38ae05686b223761",
+    "Experiments/001-todo-gpt6/README.md": "fe393e3bc66468c2cbf3dce6d2698df20856856189d54c7870510d4fa01e29b1"
+  },
+  "sourceHashesAfter": {
+    "Experiments/001-todo-gpt6/app.js": "5dee073c8b2de9f9b24eb6307fcbab447d8e22b7611f71e04a7d2c3bae457f3e",
+    "Experiments/001-todo-gpt6/index.html": "f894efe0bd51b2ce97a953cbbd056e4945294f758e24d4c5e515133d66b85994",
+    "Experiments/001-todo-gpt6/preview.png": "b217d5cf618ba70a7d13cdbbee73b2b08df721d9c452ba2df9dde69eed27e7f3",
+    "Experiments/001-todo-gpt6/styles.css": "2df3fff277b69f40d2209bed3ff11b408e1f850fc7d28a3f38ae05686b223761",
+    "Experiments/001-todo-gpt6/README.md": "fe393e3bc66468c2cbf3dce6d2698df20856856189d54c7870510d4fa01e29b1"
+  },
+  "suiteHashes": {
+    "package.json": "f591c2a31d360c81f0829e85581c8cf88ba7fb274d2aad63f4f31bde307a9028",
+    "package-lock.json": "32eb28457bd6c65baf7c8d3c7b433806c788c08f6adbf5cf0346917b3791b439",
+    "playwright.config.cjs": "3715bfb6a278dbd726eda067396e1b883ff235a8d9a6b72ffa47658856c51e15",
+    "automation/run.cjs": "1c845305642ff1fdb5fd903a514672de32d50ed71d5cbcf61949a9d52196c6c2",
+    "automation/server.cjs": "48e9a87343a362ed6dd4ba18949acda7c39447ae962dd879a70af9d505c315e8",
+    "automation/export-public.cjs": "d6a17321a95c632950b5a98f6a4f4a0152fe6a88d1eb0d0bb889982d6bfe8ef3",
+    "automation/report.cjs": "27431da990fc7b8bd167a487c7f7fef8999025bde38ac91061bdc07eb7d51fdc",
+    "automation/reporter.cjs": "b744cae5fe888d49c68cc4fe7f856f61cbdf2c7d478641bae56052deb4d126e0",
+    "automation/original-app.sha256.json": "790224fe17b64402af74767aa34834e357d3d935c599a7ceaa3b1b85c5857136",
+    "tests/e2e/fixtures.cjs": "61eb89c63784fdda335f056321af1571184db03c8879be83cc350176c1225c4b",
+    "tests/e2e/todo.spec.cjs": "f40af4a228174c5c486ce80aec52a1cbfcc3a341e9099bdb1b762f71b5836f1d",
+    "tests/e2e/dashboard.spec.cjs": "134434c337a205d2beb8244eb87f3b367344afe490cff2d8b89fc997f06309ee",
+    "automation/lab.sh": "d9306c76aadbefd9de61a4d4ebd6448e65ddaf0b0a863a3ab80904086ba6be40",
+    "tests/core.test.cjs": "9660229b440242b61860f5a2a30550b00a0ce01b78f5c3c743dfcc1ebd0c1551",
+    "tests/report.test.cjs": "90bd4722ab6e08fc52300e137afb4e8efb9db86a4fde71b9f6f990422543d18d",
+    "tests/server.test.cjs": "6bde697346ecbe0df5862b87894fcc402eddbf9c93fc03a4263ef7fed0cd0295",
+    "release-files.txt": "4f542863ae2267ede9d6b15051c1fc2125b5775cb007c758496b06e95735997c",
+    "automated-reports.js": "172c05b56838bd352f6edfa7d803593a2db3a934d84a5672451da06a4355e435",
+    "report-format.js": "395822b2f44193b96ab5e74eeb1f918222d64ee516cc25eda10ad52c28400f20",
+    "index.html": "66622b4cf00103c916c09540495e7c96488e47a11fafa60864de9abd45ab8987",
+    "styles.css": "50ed5729e6603ca0c100fb066f2e84c47a288428046b44e539f7f0b65fcec7d6",
+    "app.js": "b06693f13bd019864c8c9046de5b0c34c2f0c0bcac5969354c4dbbcefd0c339f",
+    "core.js": "a8aaf4f47f2652ad53735afcf5a3fd81f0973643993f6bf9c0e4ad522894a274"
+  },
+  "originalAppUnchanged": true,
+  "durationMs": 19707.754,
+  "exitCode": 0,
+  "summary": {
+    "total": 50,
+    "passed": 50,
+    "failed": 0,
+    "error": 0,
+    "skipped": 0
+  },
+  "errors": [],
+  "limitations": [
+    "Post-hoc tests of one preserved app; not a new model generation or an official benchmark.",
+    "Browser engines and viewport checks do not establish full accessibility or actual Safari/device compatibility."
+  ],
+  "tests": [
+    {
+      "id": "ab70220f5152d77878b5-1a1e6b5e9a23fd512a58",
+      "title": "T01 fresh context starts empty",
+      "project": "chromium",
+      "file": "todo.spec.cjs",
+      "line": 11,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 84,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"chromium\",\"version\":\"156.0.8078.4\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab70220f5152d77878b5-eb8816028ac71c023b34",
+      "title": "T02 create with button and Enter, trim whitespace, preserve order",
+      "project": "chromium",
+      "file": "todo.spec.cjs",
+      "line": 16,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 121,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"chromium\",\"version\":\"156.0.8078.4\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab70220f5152d77878b5-55f81142932c8343a909",
+      "title": "T03 edit and save changes only the selected task",
+      "project": "chromium",
+      "file": "todo.spec.cjs",
+      "line": 24,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 214,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"chromium\",\"version\":\"156.0.8078.4\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab70220f5152d77878b5-c7aa63a325b1b06fa026",
+      "title": "T04 cancel editing using Cancel",
+      "project": "chromium",
+      "file": "todo.spec.cjs",
+      "line": 32,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 181,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"chromium\",\"version\":\"156.0.8078.4\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab70220f5152d77878b5-ad40d24a87d616f21501",
+      "title": "T04 cancel editing using Escape",
+      "project": "chromium",
+      "file": "todo.spec.cjs",
+      "line": 32,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 152,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"chromium\",\"version\":\"156.0.8078.4\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab70220f5152d77878b5-8eb9332a10c8bcbf8077",
+      "title": "T05 complete and reopen task, update counts and progress",
+      "project": "chromium",
+      "file": "todo.spec.cjs",
+      "line": 42,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 236,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"chromium\",\"version\":\"156.0.8078.4\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab70220f5152d77878b5-46c25b51da6613a75abb",
+      "title": "T06 delete selected tasks including final item and persist deletion",
+      "project": "chromium",
+      "file": "todo.spec.cjs",
+      "line": 52,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 221,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"chromium\",\"version\":\"156.0.8078.4\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab70220f5152d77878b5-6b1742699280ce294955",
+      "title": "T07 all, active, completed filters and empty filtered state",
+      "project": "chromium",
+      "file": "todo.spec.cjs",
+      "line": 61,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 321,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"chromium\",\"version\":\"156.0.8078.4\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab70220f5152d77878b5-70f990c9d8998e7dfa8e",
+      "title": "T08 create from completed filter reveals new active task",
+      "project": "chromium",
+      "file": "todo.spec.cjs",
+      "line": 78,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 138,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"chromium\",\"version\":\"156.0.8078.4\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab70220f5152d77878b5-b75e67d25b7da4350d48",
+      "title": "T09 tasks and completion persist across reload and a new tab",
+      "project": "chromium",
+      "file": "todo.spec.cjs",
+      "line": 84,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 249,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"chromium\",\"version\":\"156.0.8078.4\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab70220f5152d77878b5-83bb52cf88e601042ec6",
+      "title": "T10 reject empty creation and recover",
+      "project": "chromium",
+      "file": "todo.spec.cjs",
+      "line": 94,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 138,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"chromium\",\"version\":\"156.0.8078.4\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab70220f5152d77878b5-61e3898f6bd8a2002ff4",
+      "title": "T10 reject whitespace creation and recover",
+      "project": "chromium",
+      "file": "todo.spec.cjs",
+      "line": 94,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 137,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"chromium\",\"version\":\"156.0.8078.4\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab70220f5152d77878b5-fa0fe1d26f1e237778c9",
+      "title": "T11 reject blank edit without losing original task",
+      "project": "chromium",
+      "file": "todo.spec.cjs",
+      "line": 100,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 188,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"chromium\",\"version\":\"156.0.8078.4\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab70220f5152d77878b5-c795c9bdcf6854a989b8",
+      "title": "T12 duplicate labels have independent identities",
+      "project": "chromium",
+      "file": "todo.spec.cjs",
+      "line": 109,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 222,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"chromium\",\"version\":\"156.0.8078.4\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab70220f5152d77878b5-d29130ad607f55872e71",
+      "title": "T13 Unicode and HTML-like task text stay literal on create, edit, reload",
+      "project": "chromium",
+      "file": "todo.spec.cjs",
+      "line": 117,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 176,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"chromium\",\"version\":\"156.0.8078.4\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab70220f5152d77878b5-8c40fa99a4f9d2405afb",
+      "title": "T14 create and edit enforce the 500-character typed-input boundary",
+      "project": "chromium",
+      "file": "todo.spec.cjs",
+      "line": 127,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 149,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"chromium\",\"version\":\"156.0.8078.4\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab70220f5152d77878b5-2f947d58b8b03d17ca65",
+      "title": "T15 malformed JSON storage reports an error without crashing",
+      "project": "chromium",
+      "file": "todo.spec.cjs",
+      "line": 141,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 120,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"chromium\",\"version\":\"156.0.8078.4\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab70220f5152d77878b5-3edde044633920ebf0a3",
+      "title": "T15 invalid schema storage reports an error without crashing",
+      "project": "chromium",
+      "file": "todo.spec.cjs",
+      "line": 141,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 119,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"chromium\",\"version\":\"156.0.8078.4\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab70220f5152d77878b5-6e3e8d92a2ff020b5236",
+      "title": "T15 duplicate IDs storage reports an error without crashing",
+      "project": "chromium",
+      "file": "todo.spec.cjs",
+      "line": 141,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 119,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"chromium\",\"version\":\"156.0.8078.4\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab70220f5152d77878b5-0cd0012159542acf31e8",
+      "title": "T16 storage quota error preserves saved data and exposes unsaved change",
+      "project": "chromium",
+      "file": "todo.spec.cjs",
+      "line": 149,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 148,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"chromium\",\"version\":\"156.0.8078.4\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab70220f5152d77878b5-652aead599d16a54387d",
+      "title": "T17 unavailable storage warns and still allows in-tab operations",
+      "project": "chromium",
+      "file": "todo.spec.cjs",
+      "line": 157,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 189,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"chromium\",\"version\":\"156.0.8078.4\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab70220f5152d77878b5-a8d30dfedd369f29975d",
+      "title": "T18 responsive operations at 320px with long task",
+      "project": "chromium",
+      "file": "todo.spec.cjs",
+      "line": 165,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 300,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"chromium\",\"version\":\"156.0.8078.4\",\"viewport\":{\"width\":320,\"height\":900}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab70220f5152d77878b5-e29084009f69a7faf2c5",
+      "title": "T18 responsive operations at 390px with long task",
+      "project": "chromium",
+      "file": "todo.spec.cjs",
+      "line": 165,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 302,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"chromium\",\"version\":\"156.0.8078.4\",\"viewport\":{\"width\":390,\"height\":900}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab70220f5152d77878b5-1088fcc80450b895b46f",
+      "title": "T18 responsive operations at 768px with long task",
+      "project": "chromium",
+      "file": "todo.spec.cjs",
+      "line": 165,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 304,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"chromium\",\"version\":\"156.0.8078.4\",\"viewport\":{\"width\":768,\"height\":900}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab70220f5152d77878b5-932eb6efa4a5cd2c598b",
+      "title": "T18 responsive operations at 1440px with long task",
+      "project": "chromium",
+      "file": "todo.spec.cjs",
+      "line": 165,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 306,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"chromium\",\"version\":\"156.0.8078.4\",\"viewport\":{\"width\":1440,\"height\":900}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab70220f5152d77878b5-a8b8f138e85aaacbcdd8",
+      "title": "T01 fresh context starts empty",
+      "project": "webkit",
+      "file": "todo.spec.cjs",
+      "line": 11,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 247,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"webkit\",\"version\":\"27.2\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab70220f5152d77878b5-2196be70ef5fb8e203bb",
+      "title": "T02 create with button and Enter, trim whitespace, preserve order",
+      "project": "webkit",
+      "file": "todo.spec.cjs",
+      "line": 16,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 190,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"webkit\",\"version\":\"27.2\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab70220f5152d77878b5-21cd91a26549b7c008b2",
+      "title": "T03 edit and save changes only the selected task",
+      "project": "webkit",
+      "file": "todo.spec.cjs",
+      "line": 24,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 291,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"webkit\",\"version\":\"27.2\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab70220f5152d77878b5-2b8202d2e59f232fce78",
+      "title": "T04 cancel editing using Cancel",
+      "project": "webkit",
+      "file": "todo.spec.cjs",
+      "line": 32,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 270,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"webkit\",\"version\":\"27.2\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab70220f5152d77878b5-9848399b191d3612dde4",
+      "title": "T04 cancel editing using Escape",
+      "project": "webkit",
+      "file": "todo.spec.cjs",
+      "line": 32,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 239,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"webkit\",\"version\":\"27.2\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab70220f5152d77878b5-cde3f11a5a2d6e81da13",
+      "title": "T05 complete and reopen task, update counts and progress",
+      "project": "webkit",
+      "file": "todo.spec.cjs",
+      "line": 42,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 319,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"webkit\",\"version\":\"27.2\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab70220f5152d77878b5-fca7189b6197f3717226",
+      "title": "T06 delete selected tasks including final item and persist deletion",
+      "project": "webkit",
+      "file": "todo.spec.cjs",
+      "line": 52,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 4341,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"webkit\",\"version\":\"27.2\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab70220f5152d77878b5-8b9a89ce8abcff4d2e83",
+      "title": "T07 all, active, completed filters and empty filtered state",
+      "project": "webkit",
+      "file": "todo.spec.cjs",
+      "line": 61,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 396,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"webkit\",\"version\":\"27.2\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab70220f5152d77878b5-af4ed6e29460ca9b0f51",
+      "title": "T08 create from completed filter reveals new active task",
+      "project": "webkit",
+      "file": "todo.spec.cjs",
+      "line": 78,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 218,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"webkit\",\"version\":\"27.2\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab70220f5152d77878b5-87f068188b04184e0484",
+      "title": "T09 tasks and completion persist across reload and a new tab",
+      "project": "webkit",
+      "file": "todo.spec.cjs",
+      "line": 84,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 416,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"webkit\",\"version\":\"27.2\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab70220f5152d77878b5-8c33a5fadc91a9b610b8",
+      "title": "T10 reject empty creation and recover",
+      "project": "webkit",
+      "file": "todo.spec.cjs",
+      "line": 94,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 245,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"webkit\",\"version\":\"27.2\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab70220f5152d77878b5-03c691b7f007e2852510",
+      "title": "T10 reject whitespace creation and recover",
+      "project": "webkit",
+      "file": "todo.spec.cjs",
+      "line": 94,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 208,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"webkit\",\"version\":\"27.2\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab70220f5152d77878b5-8665181fa164aa2dda36",
+      "title": "T11 reject blank edit without losing original task",
+      "project": "webkit",
+      "file": "todo.spec.cjs",
+      "line": 100,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 291,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"webkit\",\"version\":\"27.2\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab70220f5152d77878b5-ccb09bb8346ca4ae722e",
+      "title": "T12 duplicate labels have independent identities",
+      "project": "webkit",
+      "file": "todo.spec.cjs",
+      "line": 109,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 290,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"webkit\",\"version\":\"27.2\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab70220f5152d77878b5-676d1438dbae91624c8f",
+      "title": "T13 Unicode and HTML-like task text stay literal on create, edit, reload",
+      "project": "webkit",
+      "file": "todo.spec.cjs",
+      "line": 117,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 269,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"webkit\",\"version\":\"27.2\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab70220f5152d77878b5-e54e5dd234035a757ca6",
+      "title": "T14 create and edit enforce the 500-character typed-input boundary",
+      "project": "webkit",
+      "file": "todo.spec.cjs",
+      "line": 127,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 243,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"webkit\",\"version\":\"27.2\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab70220f5152d77878b5-452393d1670912b09f17",
+      "title": "T15 malformed JSON storage reports an error without crashing",
+      "project": "webkit",
+      "file": "todo.spec.cjs",
+      "line": 141,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 193,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"webkit\",\"version\":\"27.2\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab70220f5152d77878b5-cb872a98e83afa73169f",
+      "title": "T15 invalid schema storage reports an error without crashing",
+      "project": "webkit",
+      "file": "todo.spec.cjs",
+      "line": 141,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 3334,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"webkit\",\"version\":\"27.2\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab70220f5152d77878b5-7020e44946ef6e4490fa",
+      "title": "T15 duplicate IDs storage reports an error without crashing",
+      "project": "webkit",
+      "file": "todo.spec.cjs",
+      "line": 141,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 191,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"webkit\",\"version\":\"27.2\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab70220f5152d77878b5-1f7a904f763779ae57c2",
+      "title": "T16 storage quota error preserves saved data and exposes unsaved change",
+      "project": "webkit",
+      "file": "todo.spec.cjs",
+      "line": 149,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 231,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"webkit\",\"version\":\"27.2\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab70220f5152d77878b5-2fd0dd9aa18d73dccd88",
+      "title": "T17 unavailable storage warns and still allows in-tab operations",
+      "project": "webkit",
+      "file": "todo.spec.cjs",
+      "line": 157,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 262,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"webkit\",\"version\":\"27.2\",\"viewport\":{\"width\":1440,\"height\":1000}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab70220f5152d77878b5-0d822eaeff792487ff5b",
+      "title": "T18 responsive operations at 320px with long task",
+      "project": "webkit",
+      "file": "todo.spec.cjs",
+      "line": 165,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 382,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"webkit\",\"version\":\"27.2\",\"viewport\":{\"width\":320,\"height\":900}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab70220f5152d77878b5-71c18cf6cfb8e7d51844",
+      "title": "T18 responsive operations at 390px with long task",
+      "project": "webkit",
+      "file": "todo.spec.cjs",
+      "line": 165,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 371,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"webkit\",\"version\":\"27.2\",\"viewport\":{\"width\":390,\"height\":900}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab70220f5152d77878b5-9ea9fdfed8c83bc98cc7",
+      "title": "T18 responsive operations at 768px with long task",
+      "project": "webkit",
+      "file": "todo.spec.cjs",
+      "line": 165,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 388,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"webkit\",\"version\":\"27.2\",\"viewport\":{\"width\":768,\"height\":900}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "ab70220f5152d77878b5-1f0ec52a8265a59fac6e",
+      "title": "T18 responsive operations at 1440px with long task",
+      "project": "webkit",
+      "file": "todo.spec.cjs",
+      "line": 165,
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "status": "passed",
+      "outcome": "expected",
+      "attempts": [
+        {
+          "status": "passed",
+          "durationMs": 375,
+          "retry": 0,
+          "errors": [],
+          "attachments": [
+            {
+              "name": "browser-environment",
+              "contentType": "application/json",
+              "body": "{\"browserName\":\"webkit\",\"version\":\"27.2\",\"viewport\":{\"width\":1440,\"height\":900}}"
+            },
+            {
+              "name": "page-errors",
+              "contentType": "application/json",
+              "body": "[]"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "publicExport": {
+    "sourceReportSha256": "3d9761e4a83e385f4121a2d1c826cfcb88d8b0a0f21a14f3f2897692b7d69860",
+    "omitted": [
+      "ephemeral local server URL",
+      "screenshots and their file references",
+      "raw Playwright JSON",
+      "console logs",
+      "traces",
+      "input snapshots"
+    ],
+    "note": "Derived from an actual completed run. Test titles, outcomes, timings, environment and source hashes are retained. No scores are inferred. Raw evidence stays local."
+  }
+}

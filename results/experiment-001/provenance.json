@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "originalResearch": {
+    "repository": "https://github.com/lucafsenfsen/ai-agent-testing-lab",
+    "commit": "713c528179c364f44c5c9bc717b0d70a80fdd685",
+    "readmeGitBlob": "a3b3a131369510cb44b77b7f4b8dd8e0ee5e1fb4",
+    "restoration": "README restored unchanged from this existing public commit. Original app and preview match it."
+  },
+  "originalFileSha256": {
+    "Experiments/001-todo-gpt6/app.js": "5dee073c8b2de9f9b24eb6307fcbab447d8e22b7611f71e04a7d2c3bae457f3e",
+    "Experiments/001-todo-gpt6/index.html": "f894efe0bd51b2ce97a953cbbd056e4945294f758e24d4c5e515133d66b85994",
+    "Experiments/001-todo-gpt6/preview.png": "b217d5cf618ba70a7d13cdbbee73b2b08df721d9c452ba2df9dde69eed27e7f3",
+    "Experiments/001-todo-gpt6/styles.css": "2df3fff277b69f40d2209bed3ff11b408e1f850fc7d28a3f38ae05686b223761",
+    "Experiments/001-todo-gpt6/README.md": "fe393e3bc66468c2cbf3dce6d2698df20856856189d54c7870510d4fa01e29b1"
+  },
+  "releaseVerification": {
+    "status": "passed",
+    "date": "2026-10-08",
+    "commands": [
+      "npm ci",
+      "npm test"
+    ],
+    "installation": "Fresh dependency installation in a copy containing only the release allowlist. Matching Playwright browser cache reused.",
+    "application": {
+      "runId": "2026-10-08T18-17-45-477Z-evaluation-cc77ac44",
+      "total": 50,
+      "passed": 50,
+      "failed": 0,
+      "error": 0,
+      "skipped": 0
+    },
+    "dashboard": {
+      "runId": "2026-10-08T18-17-58-871Z-dashboard-b583e9bd",
+      "total": 20,
+      "passed": 20,
+      "failed": 0,
+      "error": 0,
+      "skipped": 0
+    },
+    "nodeLogic": {
+      "total": 21,
+      "passed": 21,
+      "failed": 0,
+      "skipped": 0,
+      "logSha256": "4d4cd8aa949e0f78cfb215e7f3c0eedfc433625412a3d4dd641865472567ec59"
+    },
+    "preservation": "All five original experiment files and all suite source hashes match the tested release source.",
+    "npmAudit": "npm ci reported 0 vulnerabilities at verification time; this is not a security audit.",
+    "published": false
+  }
+}
