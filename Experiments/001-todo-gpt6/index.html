@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#16665b">
+  <title>Daylist — Your to-do list</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="app">
+    <header>
+      <span class="brand">✓ DAYLIST</span>
+      <h1>A little more done.</h1>
+      <p>Make room for what matters, one task at a time.</p>
+    </header>
+
+    <section class="panel" aria-label="Your to-do list">
+      <form id="add-form">
+        <label for="task-input">What’s next?</label>
+        <div class="add-row">
+          <input id="task-input" type="text" placeholder="Add something to your list…"
+            maxlength="500" autocomplete="off" required>
+          <button class="primary" type="submit">+ Add task</button>
+        </div>
+      </form>
+
+      <div class="toolbar">
+        <div class="filters" role="group" aria-label="Filter tasks">
+          <button type="button" data-filter="all" aria-pressed="true">All</button>
+          <button type="button" data-filter="active" aria-pressed="false">Active</button>
+          <button type="button" data-filter="completed" aria-pressed="false">Completed</button>
+        </div>
+        <span id="task-count"></span>
+      </div>
+
+      <ul id="task-list" aria-label="Tasks"></ul>
+      <div id="empty-state">
+        <span class="empty-icon" aria-hidden="true">✓</span>
+        <h2 id="empty-title">A fresh start.</h2>
+        <p id="empty-description">Add your first task above. Small steps count.</p>
+      </div>
+
+      <footer class="progress-area">
+        <label for="progress" id="progress-label">Your progress</label>
+        <progress id="progress" value="0" max="1"></progress>
+      </footer>
+    </section>
+    <p id="storage-note" class="storage-note">Your tasks are saved in this browser.</p>
+    <p id="storage-error" role="alert" hidden></p>
+    <p id="announcement" class="sr-only" role="status" aria-live="polite"></p>
+    <noscript>Please enable JavaScript to use your to-do list.</noscript>
+  </main>
+</body>
+</html>
