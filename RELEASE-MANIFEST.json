@@ -1,0 +1,192 @@
+{
+  "schemaVersion": 1,
+  "release": "phase1",
+  "files": [
+    {
+      "path": ".gitignore",
+      "bytes": 4941,
+      "sha256": "0a3af4096e9e875ded1066f5b5c1db7163d4373db6ff9beda67df2799b08dfdd"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1062,
+      "sha256": "2907d5e82cf6526f2d6cb64440f88e5db245efa444e5f242feca0ed7ea2d20a2"
+    },
+    {
+      "path": "README.md",
+      "bytes": 9708,
+      "sha256": "33b207859e6baa13ccd741489b2fc87fe3afaf1010eede009a45f25a249733db"
+    },
+    {
+      "path": "PUBLICATION.md",
+      "bytes": 6042,
+      "sha256": "c47fb7875449084e6362e2ca698b4e7d56c7868e316e79fa9732c05eb6ae2645"
+    },
+    {
+      "path": "release-files.txt",
+      "bytes": 861,
+      "sha256": "afd3cd01587efb7526d897211f88b3504e5b2df2ab2699ba0a3b4875cc6b2269"
+    },
+    {
+      "path": "package.json",
+      "bytes": 618,
+      "sha256": "20a692777606184d81edcdf54cc7d0dd94aba269ddf9b9ac36bb090888cbf2f0"
+    },
+    {
+      "path": "package-lock.json",
+      "bytes": 1755,
+      "sha256": "32eb28457bd6c65baf7c8d3c7b433806c788c08f6adbf5cf0346917b3791b439"
+    },
+    {
+      "path": "playwright.config.cjs",
+      "bytes": 1033,
+      "sha256": "3715bfb6a278dbd726eda067396e1b883ff235a8d9a6b72ffa47658856c51e15"
+    },
+    {
+      "path": "index.html",
+      "bytes": 8246,
+      "sha256": "66622b4cf00103c916c09540495e7c96488e47a11fafa60864de9abd45ab8987"
+    },
+    {
+      "path": "styles.css",
+      "bytes": 18141,
+      "sha256": "50ed5729e6603ca0c100fb066f2e84c47a288428046b44e539f7f0b65fcec7d6"
+    },
+    {
+      "path": "core.js",
+      "bytes": 8199,
+      "sha256": "a8aaf4f47f2652ad53735afcf5a3fd81f0973643993f6bf9c0e4ad522894a274"
+    },
+    {
+      "path": "app.js",
+      "bytes": 28504,
+      "sha256": "d83c90ac5cab4f2a3bd593ed0b8748a580100e18bb3145d445665ad8cc95298a"
+    },
+    {
+      "path": "report-format.js",
+      "bytes": 2535,
+      "sha256": "146430b81e6a7874b32cb554119830040faea572078f7d84e467789fe7109b09"
+    },
+    {
+      "path": "automated-reports.js",
+      "bytes": 6435,
+      "sha256": "172c05b56838bd352f6edfa7d803593a2db3a934d84a5672451da06a4355e435"
+    },
+    {
+      "path": "automation/lab.sh",
+      "bytes": 824,
+      "sha256": "d9306c76aadbefd9de61a4d4ebd6448e65ddaf0b0a863a3ab80904086ba6be40"
+    },
+    {
+      "path": "automation/server.cjs",
+      "bytes": 1488,
+      "sha256": "f92e4a94184904c59e4a64ff371b8865a25a93cb966eb9dc5b374ccbb1ec42c2"
+    },
+    {
+      "path": "automation/run.cjs",
+      "bytes": 5466,
+      "sha256": "5354710a336bd45cc1d11c3a713fbc2830879c16027d8b9f2476ae76792ed3b7"
+    },
+    {
+      "path": "automation/report.cjs",
+      "bytes": 1328,
+      "sha256": "27431da990fc7b8bd167a487c7f7fef8999025bde38ac91061bdc07eb7d51fdc"
+    },
+    {
+      "path": "automation/reporter.cjs",
+      "bytes": 2077,
+      "sha256": "b744cae5fe888d49c68cc4fe7f856f61cbdf2c7d478641bae56052deb4d126e0"
+    },
+    {
+      "path": "automation/export-public.cjs",
+      "bytes": 3764,
+      "sha256": "555a5dd892b4d1d1962b7c80eb4bbb568453425dfcf7c3764e22f1c48c8b503f"
+    },
+    {
+      "path": "automation/original-app.sha256.json",
+      "bytes": 549,
+      "sha256": "790224fe17b64402af74767aa34834e357d3d935c599a7ceaa3b1b85c5857136"
+    },
+    {
+      "path": "automation/prepare-release.py",
+      "bytes": 4280,
+      "sha256": "a0395990f1ea60b2b0021bf7413ea08bc043f1093c2d1996fb25c7557bef462d"
+    },
+    {
+      "path": "tests/core.test.cjs",
+      "bytes": 4989,
+      "sha256": "9660229b440242b61860f5a2a30550b00a0ce01b78f5c3c743dfcc1ebd0c1551"
+    },
+    {
+      "path": "tests/report.test.cjs",
+      "bytes": 3884,
+      "sha256": "18dc058b1b44a69f62caf40a42a45f187f704583a0ca878236f0aa3c556e94a0"
+    },
+    {
+      "path": "tests/e2e/fixtures.cjs",
+      "bytes": 676,
+      "sha256": "61eb89c63784fdda335f056321af1571184db03c8879be83cc350176c1225c4b"
+    },
+    {
+      "path": "tests/e2e/todo.spec.cjs",
+      "bytes": 11632,
+      "sha256": "f40af4a228174c5c486ce80aec52a1cbfcc3a341e9099bdb1b762f71b5836f1d"
+    },
+    {
+      "path": "tests/e2e/dashboard.spec.cjs",
+      "bytes": 10893,
+      "sha256": "734ab5465aa5c75b8a9093f96c0ac0057405e7e144719cb0c79028577b400806"
+    },
+    {
+      "path": "docs/REPRODUCING.md",
+      "bytes": 8043,
+      "sha256": "9349ca940a556cc10899b7adecfc2d4a2c122ccee29dac7e6c8e6dab31fd5922"
+    },
+    {
+      "path": "Experiments/001-todo-gpt6/README.md",
+      "bytes": 2177,
+      "sha256": "fe393e3bc66468c2cbf3dce6d2698df20856856189d54c7870510d4fa01e29b1"
+    },
+    {
+      "path": "Experiments/001-todo-gpt6/index.html",
+      "bytes": 2170,
+      "sha256": "f894efe0bd51b2ce97a953cbbd056e4945294f758e24d4c5e515133d66b85994"
+    },
+    {
+      "path": "Experiments/001-todo-gpt6/styles.css",
+      "bytes": 4481,
+      "sha256": "2df3fff277b69f40d2209bed3ff11b408e1f850fc7d28a3f38ae05686b223761"
+    },
+    {
+      "path": "Experiments/001-todo-gpt6/app.js",
+      "bytes": 7340,
+      "sha256": "5dee073c8b2de9f9b24eb6307fcbab447d8e22b7611f71e04a7d2c3bae457f3e"
+    },
+    {
+      "path": "Experiments/001-todo-gpt6/preview.png",
+      "bytes": 49203,
+      "sha256": "b217d5cf618ba70a7d13cdbbee73b2b08df721d9c452ba2df9dde69eed27e7f3"
+    },
+    {
+      "path": "results/experiment-001/README.md",
+      "bytes": 3852,
+      "sha256": "3845ea61d7aefb7d91e3029389650d800ef2acb6fc368561df9397461879fff2"
+    },
+    {
+      "path": "results/experiment-001/evaluation.json",
+      "bytes": 51300,
+      "sha256": "ddba0295d05d5ef67eba7d25651954f74b4b3157715081078f26a3856add5486"
+    },
+    {
+      "path": "results/experiment-001/dashboard-qa.json",
+      "bytes": 23662,
+      "sha256": "704bff29ccad639eb9704c6c88d7ec10fb8b53e68345df9c54aee6adb41a8d7a"
+    },
+    {
+      "path": "results/experiment-001/provenance.json",
+      "bytes": 2043,
+      "sha256": "09170760776e10fbca1c2376e07ebc1984d511acc4c0bd9f78f5b0eafac5830a"
+    }
+  ],
+  "note": "All payload files are listed; this generated manifest does not hash itself. No dependencies or raw local reports are bundled."
+}

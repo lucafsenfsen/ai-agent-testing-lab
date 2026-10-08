@@ -13,6 +13,7 @@
     overview: ['Experiment overview', 'The evidence behind better AI coding decisions.', 'Overview'],
     challenges: ['The challenge suite', 'Five real-world tasks. One consistent evaluation framework.', 'Challenges'],
     results: ['Test results', 'Every run, its evidence, and the reasoning behind its score.', 'Test results'],
+    automated: ['Automated test reports', 'Reproducible browser checks, separate from evaluator scores.', 'Automated tests'],
     compare: ['Compare models', 'Compare observed performance on the same challenges and protocol.', 'Compare models'],
     methodology: ['Research methodology', 'Make each experiment repeatable, inspectable, and honest.', 'Methodology']
   };
@@ -33,7 +34,7 @@
       storageBlocked = false; $('#storage-warning').hidden = true;
       $('#storage-status').textContent = 'Saved in this browser';
     } catch (error) {
-      storageWarning(storedRaw ? 'Saved data could not be read. It has been preserved. Download it for recovery; saving is disabled to prevent overwriting it.' : 'Browser storage is unavailable. Enable local storage or open the app using the local server in LAUNCH.txt.', !!storedRaw);
+      storageWarning(storedRaw ? 'Saved data could not be read. It has been preserved. Download it for recovery; saving is disabled to prevent overwriting it.' : 'Browser storage is unavailable. Enable local storage or open the app using the local server in README.md.', !!storedRaw);
     }
   }
   function persist(next) {

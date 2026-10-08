@@ -7,3 +7,10 @@ select{-webkit-appearance:none;appearance:none;min-height:43px;padding-right:32p
 /* WebKit can include long option text in the page's overflow area. */
 select{max-width:100%;overflow:hidden;text-overflow:ellipsis}
 .notice,.comparison-card,.detail-meta{overflow-wrap:anywhere}
+
+/* Phase 1 automated evidence viewer. */
+.automated-report{margin-top:20px;min-width:0;overflow-wrap:anywhere}
+.automated-report pre{white-space:pre-wrap;overflow-wrap:anywhere;font-size:12px;max-height:320px;overflow:auto}
+.automated-report details{margin:12px 0}.automated-report summary{cursor:pointer}
+.automated-report table{min-width:620px}.automated-report td{max-width:380px}
+#automated-message{overflow-wrap:anywhere}

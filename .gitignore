@@ -218,3 +218,22 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Phase 1 local dependencies and generated evidence (publish only after review)
+node_modules/
+reports/
+
+# Local release packaging, caches, editor state and secrets
+work/
+release/
+.DS_Store
+.vscode/
+.idea/
+playwright-report/
+test-results/
+.npmrc
+.env.*
+*.pem
+*.key
+*.p12
+*.pfx
